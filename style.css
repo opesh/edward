@@ -1,0 +1,56 @@
+*,*::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray; 
+    padding: 10px;
+    z-index: 10;
+}
+.navbar>div>h2{
+    padding: 10px
+}
+.navbar>div>ul{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.navbar>div>ul>li{
+    list-style-type: none;
+    padding: 10px;
+   
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.aside, div.section{
+    float: left;
+}
+.aside{
+    width: 10%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+div.section{
+    width:90%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.aside::after, div.section::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px
+}
